@@ -1,36 +1,17 @@
 # apm-sniffer-pro
 
 #### Description
-Skywalking增强插件,目前有Spring RabbitMQ Plugin
+Skywalking custom plugin,including Spring RabbitMQ Plugin now.
 
-#### Software Architecture
-Software architecture description
+#### How to use
+Package it and import the jar file to your project 
 
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1. Spring RabbitMQ Plugin
+> For the flaw of skywalking offical RabbitMQ Plugin, the plugin can not work well on Spring Project. 
+> This Plugin try to make RabbitMQ trace work well on spring project.
 
 
-#### Gitee Feature
+Dev guide: https://github.com/apache/skywalking/blob/v7.0.0/docs/en/guides/Java-Plugin-Development-Guide.md
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
