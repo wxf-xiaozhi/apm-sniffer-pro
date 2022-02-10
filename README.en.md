@@ -3,6 +3,10 @@
 #### Description
 Skywalking custom plugin,including Spring RabbitMQ Plugin now.
 
+#### Branch instructoin
+Use the version of skywalking as the prefix of branch.
+master branch is idle.
+
 #### How to use
 Package it and import the jar file to your project 
 
