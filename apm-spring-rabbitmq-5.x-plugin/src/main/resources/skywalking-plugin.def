@@ -14,4 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-spring-rabbitmq-5.x=com.banggood.skywalking.apm.plugin.rabbitmq.define.SpringRabbitMQConsumerInstrumentation
+spring-rabbitmq-5.x=org.apm.plugin.spring.rabbitmq.define.SpringRabbitMQConsumerInstrumentation

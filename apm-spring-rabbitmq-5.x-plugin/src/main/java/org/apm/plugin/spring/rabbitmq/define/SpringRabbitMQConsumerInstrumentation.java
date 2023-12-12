@@ -51,12 +51,12 @@ public class SpringRabbitMQConsumerInstrumentation extends ClassInstanceMethodsE
 
                     @Override
                     public String getMethodsInterceptor() {
-                        return "com.banggood.skywalking.apm.plugin.rabbitmq.SpringRabbitMQConsumerInterceptor";
+                        return "org.apm.plugin.spring.rabbitmq.SpringRabbitMQConsumerInterceptor";
                     }
 
                     @Override
                     public boolean isOverrideArgs() {
-                        return false;
+                        return true;
                     }
                 }
         };
@@ -66,4 +66,19 @@ public class SpringRabbitMQConsumerInstrumentation extends ClassInstanceMethodsE
     protected ClassMatch enhanceClass() {
         return NameMatch.byName("org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer");
     }
+//
+//    @Override
+//    protected String[] witnessClasses() {
+//        return new String[] {
+//                "foo.Bar"
+//        };
+//    }
+//
+//    @Override
+//    protected List<WitnessMethod> witnessMethods() {
+//        List<WitnessMethod> witnessMethodList = new ArrayList<>();
+//        WitnessMethod witnessMethod = new WitnessMethod("foo.Bar", ElementMatcher.named("hello"));
+//        witnessMethodList.add(witnessMethod);
+//        return witnessMethodList;
+//    }
 }
